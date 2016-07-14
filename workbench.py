@@ -85,11 +85,14 @@ bom_items = [
     (Support.count, Support),
     (Surface.boards, Surface)
 ]
+"""
 buying = {
     "KR8080": 1,
     "KR8050": 2,
     "BD20040": 4,
 }
 print_bom(bom_items, buying)
+"""
+print_bom(bom_items)
 world = legs + Surface().render() + supports()
 print(scad_render(world))
